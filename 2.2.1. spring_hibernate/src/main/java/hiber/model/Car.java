@@ -1,8 +1,7 @@
 package hiber.model;
 
-
 import javax.persistence.*;
-
+import javax.persistence.Column;
 @Entity
 @Table(name = "cars")
 public class Car {
@@ -15,14 +14,13 @@ public class Car {
 
     @Column(name = "series")
     private int series;
-   // @OneToOne(mappedBy = "car",cascade = CascadeType.ALL)
-//    @OneToOne(cascade = CascadeType.ALL)
-//    @JoinColumn(name = "user_id")
+
+
     @OneToOne
-   // @JoinColumn(name = "user_id")
     private User user;
 
-    public Car() {}
+    public Car() {
+    }
 
     public Car(String model, int series) {
         this.model = model;
