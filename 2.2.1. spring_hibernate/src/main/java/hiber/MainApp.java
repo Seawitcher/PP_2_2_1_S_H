@@ -39,7 +39,7 @@ public class MainApp {
             System.out.println("Series = " + user.getСar().getSeries());
             System.out.println();
         }
-//        userService.getUserWhoCarAccordingModelAndSeries("Lada");
+     userService.getUserWhoCarAccordingModelAndSeries("Lada", 124);
 
         context.close();
     }

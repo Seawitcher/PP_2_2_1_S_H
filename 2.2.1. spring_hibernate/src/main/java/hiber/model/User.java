@@ -21,7 +21,8 @@ public class User {
 
 //    @OneToOne(cascade = CascadeType.ALL)
 //    @JoinColumn(name = "car_id")
-    @OneToOne(mappedBy = "user")
+    @OneToOne
+    @MapsId
     private Car сar;
 
     public User() {
