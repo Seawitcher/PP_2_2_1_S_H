@@ -34,7 +34,7 @@ public class UserDaoImp implements UserDao {
         return query.getResultList();
     }
 
-
+    @Override
     @Transactional
     public List<User> getUserWhoCarAccordingModelAndSeries(String model, int series) {
 
